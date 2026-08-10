@@ -3,7 +3,7 @@ name: Deploy Zola site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # または master（デフォルトブランチ名に合わせる）
 
 permissions:
   contents: read
@@ -21,15 +21,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build with Zola
+      - name: Build Zola
         uses: shalzz/zola-deploy-action@v0.19.2
         with:
-          BUILD_ONLY: true
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
+          BUILD_DIR: .
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
     environment:
