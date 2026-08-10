@@ -21,12 +21,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-            submodules: true
+          submodules: true
 
       - name: Install Zola
         uses: taiki-e/install-action@v2
         with:
-          tool: zola
+          tool: zola@0.22.1 # <- バージョンを明示的に指定
 
       - name: Build site
         run: zola build
