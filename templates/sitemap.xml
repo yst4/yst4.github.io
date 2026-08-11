@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+{%- for entry in entries %}
+  {%- if not entry.extra.hidden | default(value=false) %}
+  <url>
+    <loc>{{ entry.permalink | safe }}</loc>
+    {%- if entry.date %}
+    <lastmod>{{ entry.date | date(format="%Y-%m-%d") }}</lastmod>
+    {%- endif %}
+  </url>
+  {%- endif %}
+{%- endfor %}
+</urlset>

@@ -28,7 +28,7 @@ tags = ["test"]
 gantt
 dateFormat YYYY-MM-DD
 axisFormat %m/%d
-tickInterval 1w
+tickInterval 2w
 title 本1の計画と状況
 
 section 1周目

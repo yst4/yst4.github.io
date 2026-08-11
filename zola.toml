@@ -78,7 +78,7 @@ menu_name = [
 [extra.profiles.yasuto_takenaka]
 # The URL of the avatar.
 # e.g. "icons/github.svg"
-avatar_url = "icons/home.svg"
+avatar_url = "icons/yst4.jpg"
 #avatar_url = "https://secure.gravatar.com/avatar/b500601bce86d0f54118a6806e912ddadcd87c6707b681462a19ea4e205fbc48?s=192&d=identicon&r=g"
 
 
