@@ -125,3 +125,11 @@ header_color = "#d4d4b7"
 # The custom header color in dark mode, only available
 # when "header_blur" is false.
 header_dark_color = "#27274a"
+
+[extra.profiles.yasuto_takenaka.open_graph]
+image = "icons/yst4.jpg"
+image_alt = "yst4.jpg"
+first_name = "Yasuto"
+last_name = "TAKENANA"
+username = "yst4"
+gender = "male"
