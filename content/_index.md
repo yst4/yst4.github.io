@@ -1,4 +1,8 @@
 +++
-title= "Home"
-sort_by="date"
+title = ""
+description = ""
+sort_by = "date"
+paginate_by = 4
+[extra]
+profile = "yasuto_takenaka"
 +++

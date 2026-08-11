@@ -1,23 +1,127 @@
 # The URL the site will be built for
 base_url = "https://yst4.github.io"
 theme = "linkita"
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
 
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+# default_language = "ja"
+author = "Yasuto TAKENAKA"
+
+taxonomies = [
+  { name = "tags", feed = true, paginate_by = 4 },
+  { name = "categories", feed = true, paginate_by = 4 },
+  { name = "authors", feed = true, paginate_by = 4 },
+]
+
+generate_sitemap = true
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+# The site title.
+# Will be in all page titles.
+title = "yst4.github.io"
+
+# The site description.
+# Used in feeds by default.
+description = ""
+
+# Automatically generate a feed.
+# Default value: false
+generate_feeds = true
+
+# The filenames to use for the feeds.
+# e.g. ["rss.xml"]
+feed_filenames = ["atom.xml"]
+
+# Build a search index from the pages and section content
+# for "default_language".
+build_search_index = true
 
 [markdown]
 
 [markdown.highlighting]
-theme = "catppuccin-mocha"
+#theme = "catppuccin-frappe"
+light_theme = "catppuccin-latte"
+dark_theme = "catppuccin-macchiato"
 
 [extra]
 # Put all your custom variables here
 
-author = "Yasuto TAKENAKA"
-github = "yst4"
-bluesky = "yst4.com"
+# Enable KaTeX support.
+math = true
+
+# Enable Mermaid support.
+mermaid = true
+# Default value: config.extra.toc
+toc = true
+# Title separator.
+title_separator = " | "
+
+# The top menu.
+# See "extra.menus".
+header_menu_name = "menu_name"
+
+# See "extra.menus".
+menu_i18n = false
+# For the archive.html template.
+section = "_index.md"
+
 [extra.footer]
 copyright = "&copy; $YEAR Yasuto TAKENAKA"
 since = 2026
+[extra.menus]
+menu_name = [
+  { url = "$BASE_URL/blog/", name = "Archive" },
+  { url = "$BASE_URL/categories/", name = "Categories" },
+  { url = "$BASE_URL/tags/", name = "Tags" },
+#  { url = "$BASE_URL/about/", name = "About" },
+]
+
+[extra.profiles.yasuto_takenaka]
+# The URL of the avatar.
+# e.g. "icons/github.svg"
+avatar_url = "icons/home.svg"
+#avatar_url = "https://secure.gravatar.com/avatar/b500601bce86d0f54118a6806e912ddadcd87c6707b681462a19ea4e205fbc48?s=192&d=identicon&r=g"
+
+
+# A description of what is in the avatar.
+avatar_alt = ""
+
+# Invert avatar color in dark mode.
+# Default value: false
+avatar_invert = false
+
+# Profile name.
+# Default value: the username
+name = "Yasuto TAKENAKA"
+
+# Profile bio.
+# Supports Markdown.
+bio = ""
+
+# Social icons.
+# "name" should be the file name of "static/icons/*.svg" or
+# the icon name of https://simpleicons.org/
+# "url" supports "$BASE_URL".
+# Other variables: "urls", "title", "titles".
+social = [
+    { name = "home", url = "https://yst4.com"},
+    { name = "github", url = "https://github.com/yst4" },
+    { name = "bluesky", url = "https://bsky.app/profile/yst4.com" },
+    { name = "email", url = "mailto:y.takenaka@gmail.com" },
+    { name = "rss", url = "$BASE_URL/atom.xml" },
+]
+[extra.style]
+# The custom background color.
+bg_color = "#e4e4d5"
+
+# The custom background color in dark mode.
+bg_dark_color = "#18182b"
+
+# Enable header blur.
+header_blur = false
+
+# The custom header color, only available
+# when "header_blur" is false.
+header_color = "#d4d4b7"
+# The custom header color in dark mode, only available
+# when "header_blur" is false.
+header_dark_color = "#27274a"
