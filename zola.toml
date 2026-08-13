@@ -49,10 +49,10 @@ light_theme = "kanagawa-lotus"
 invert_page_navigation = true
 isable_default_favicon = false
 # Enable KaTeX support.
-math = true
+math = false
 
 # Enable Mermaid support.
-mermaid = true
+mermaid = false
 # Default value: config.extra.toc
 toc = true
 # Title separator.

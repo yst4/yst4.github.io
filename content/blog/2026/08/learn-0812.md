@@ -5,13 +5,15 @@ description = "2026/08/12の学習記録"
 updated= 2026-08-13
 # if you write to post, please comment out the below draft line.
 # draft = true
+[extra]
+mermaid = true
 [taxonomies]
 categories = ["learn"]
 tags = []
 +++
-{% admonition(type="abstract", title="summary") %}
+
 学習ログとしての活用を考えてるけど、その第一歩として現在取り組んでることをすこしかいておく。
-{% end %}
+
 <!-- more -->
 ## 最初に
 [About](/about)のところにかいておいた現象を理解して紐解くってのは洞察力が物を言うのはおそらくこの分野でも同じでしょう。ただ技法を適当に組み合わせて解いていくって感覚ではブラックボックスを闇雲に触ってれるだけになりがちなんでね。データから語りかける声を理解していくってのはおそらく、数式から現象の声を聞くってのと変わらないだろうと想像してますね。

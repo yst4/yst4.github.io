@@ -5,11 +5,14 @@ date = 2026-08-10
 description = ""
 # if you write to post, please comment out the below draft line.
 draft = true
+
+[extra]
+mermaid = false
+math = false
+
 [taxonomies]
 categories = []
 tags = []
 +++
-{% admonition(type="abstract", title="summary") %}
-write the post summery here
-{% end %}
+# write the post summery here
 <!-- more -->

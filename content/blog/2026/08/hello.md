@@ -3,14 +3,15 @@ title = "最初の投稿"
 date = 2026-08-10
 updated = 2026-08-11
 description = "最初の投稿でtestを兼ねてる"
+[extra]
+mermaid = true
 [taxonomies]
 categories = ["learn"]
 tags = ["test"]
 +++
 
-{% admonition(type="abstract", title="要約") %}
 ここにサーマリーをかいておくといいかな。
-{% end %}
+
 <!-- more -->
 最初のポストですね。
 ## Hello, world!

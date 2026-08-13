@@ -7,10 +7,9 @@ description = "学習で利用してるPC環境について"
 categories = ["learn"]
 tags = []
 +++
-{% admonition(type="abstract", title="summary") %}
 学習で利用してる現在のPC環境をかいておく。
-{% end %}
 <!-- more -->
+
 ## PC
 - Lenovo legion 5i 9th Gen/ Intel 14170HX/ GPU: RTX 4060 - 8G/ RAM: 64G/ SSD: 1T+512G
 - Ryzen 7 3700X/ GPU: GTX 1660 - 6G/ RAM: 32G/ SSD: 512G
