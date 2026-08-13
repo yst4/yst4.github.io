@@ -1,13 +1,13 @@
 +++
 title = "学習で利用してる環境"
 date = 2026-08-12
-# updated= 2026-08-11
-
+updated= 2026-08-13
+description = "学習で利用してるPC環境について"
 [taxonomies]
 categories = ["learn"]
 tags = []
 +++
-{% admonition(type="abstract", title="summery") %}
+{% admonition(type="abstract", title="summary") %}
 学習で利用してる現在のPC環境をかいておく。
 {% end %}
 <!-- more -->

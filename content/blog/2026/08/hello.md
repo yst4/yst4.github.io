@@ -1,8 +1,8 @@
 +++
 title = "最初の投稿"
 date = 2026-08-10
-update-date= 2026-08-11
-
+updated = 2026-08-11
+description = "最初の投稿でtestを兼ねてる"
 [taxonomies]
 categories = ["learn"]
 tags = ["test"]

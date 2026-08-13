@@ -1,0 +1,9 @@
+[[project]]
+name = "Yasuto TAKENAKA"
+desc = ""
+tags=[]
+links = [
+    { name = "Home", url = "https://yst4.com" },
+    { name = "github", url = "https://github.com/yst4" },
+    { name = "BlueSky", url = "https://bsky.app/profile/yst4.com" },
+]

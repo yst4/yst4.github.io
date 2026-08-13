@@ -1,14 +1,15 @@
 +++
 title = "学習ログ 26-08-12 "
 date = 2026-08-12
-# update= 2026-08-11
+description = "2026/08/12の学習記録"
+updated= 2026-08-13
 # if you write to post, please comment out the below draft line.
 # draft = true
 [taxonomies]
 categories = ["learn"]
 tags = []
 +++
-{% admonition(type="abstract", title="summery") %}
+{% admonition(type="abstract", title="summary") %}
 学習ログとしての活用を考えてるけど、その第一歩として現在取り組んでることをすこしかいておく。
 {% end %}
 <!-- more -->

@@ -82,3 +82,6 @@ fn main() {
     }
 }
 ```
+
+[![alt text](/icons/open-in-kaggle.svg "open in kaggle")](/)
+![alt text](/icons/colab-badge.svg "open in colab")

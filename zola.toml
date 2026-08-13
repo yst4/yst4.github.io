@@ -17,7 +17,7 @@ generate_sitemap = true
 compile_sass = false
 # The site title.
 # Will be in all page titles.
-title = "yst4.github.io"
+title = "yst4 log"
 
 # The site description.
 # Used in feeds by default.
@@ -39,8 +39,10 @@ build_search_index = true
 
 [markdown.highlighting]
 #theme = "catppuccin-frappe"
-light_theme = "catppuccin-latte"
-dark_theme = "catppuccin-macchiato"
+#light_theme = "catppuccin-latte"
+#dark_theme = "catppuccin-macchiato"
+dark_theme = "kanagawa-wave"
+light_theme = "kanagawa-lotus"
 
 [extra]
 # Put all your custom variables here
