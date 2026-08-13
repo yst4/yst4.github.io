@@ -5,14 +5,15 @@ date = 2026-08-10
 description = ""
 # if you write to post, please comment out the below draft line.
 draft = true
-
-[extra]
-mermaid = false
-math = false
+# path = ""
 
 [taxonomies]
 categories = []
 tags = []
+
+[extra]
+mermaid = false
+math = false
 +++
 # write the post summery here
 <!-- more -->

@@ -4,6 +4,7 @@ date = 2026-08-10
 hidden=true
 [taxonomies]
 tags = []
+
 [extra]
 date_format = "%m-%d"
 hidden= true
@@ -12,7 +13,10 @@ math = true
 +++
 これはtest投稿です。学習ログなど残しておくために用意しています。
 <!-- more -->
-## 数式
+
+:smile: :warning:
+
+## :orange_square: 数式
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}\$$
 ## marmaid記法
