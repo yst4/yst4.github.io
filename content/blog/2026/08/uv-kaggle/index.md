@@ -14,7 +14,7 @@ math = false
 categories = ["learn","how-to-use"]
 tags = ["kaggle"]
 +++
-uvを活用してる時のkaggle apiの扱いをすこしメモにおいておく。ここではシェル上で多くの場合で示されてる`$ kaggle ..` 形式ではなくて `$　uvx kaggle ...` となることに注意が必要です。
+uvを活用してる時のkaggle cliの扱いをすこしメモにおいておく。ここではシェル上で多くの場合で示されてる`$ kaggle ..` 形式ではなくて `$　uvx kaggle ...` となることに注意が必要です。
 <!-- more -->
 ## 手順
 導入の仕方なんですが、次のようになります。
@@ -50,25 +50,26 @@ uvを活用してる時のkaggle apiの扱いをすこしメモにおいてお�
 
 {% admonition(type="note", title="安全性") %}
 api keyをダウンロードして　ディレクトリ ~/.kaggle の下に移すって方法も示されてるんですが、この場合はパーミッションの変更を忘れやすく、それがセキュリティホールになる危険にあるんですね。このkaggleから直接コピペするものはchmod 600というパーミッション変更も含まれてるので、セキュリティの問題も起こさない方法なのです。
-{% end %}　
+{% end %}
 
-## uvでkaggle apiを利用する
+## uvでkaggle cliを利用する
 
 uvがインストールされているのでしたら。簡単です
 ```
 $ uv tool install kaggle
 ```
-としてしまえば、インストールされます。このへんはpipを明示的にしなくても自動的に行われてその後も気にしなくていいです。試しにコンペのリストでも取ってみましょうか。
+としてしまえば、インストールされます。このへんはpipを明示的にしなくても自動的に行われてその後も気にしなくていいです。試しにコンペのリストでも取ってみましょうか。これで~/.local/bin/kaggleがインストールされます。このパス ~/.local/bin が$PATHに含まれてないと実行できないので、uvのインストールは他のサイトの紹介で行ってくださいね。
 
 ```
-$ uvx kaggle c list
+$ kaggle c list
 ref                                                                           deadline             category         reward  teamCount  userHasEntered  userRank
 ----------------------------------------------------------------------------  -------------------  --------  -------------  ---------  --------------  --------
 https://www.kaggle.com/competitions/passenger-screening-algorithm-challenge   2017-12-15 23:59:00  Featured  1,500,000 Usd        518           False         0
  ... (以下略)
 ```
-となります。このようにuvx kaggle ... で使えるようになります。
+となります。このようにkaggle ... で使えるようになります。インストールせずに使う場合はuvx kaggleでもできます。
 
+常に最新版のkaggleで行いますが、いちいちダウンロードするのでいつも起動が遅くなります。
 
 {% admonition(type="note", title="エリアスを使うとよい") %}
 いちいちuvx kaggleと打ちたくないというのでしたら。bashなどシェル環境のエリアスを設定を~/.bashrcなどに書いておくのもよいです。いっぱいエリアスつくる人なら~/.aliasesを作って、それを~/.bashrc内で source ~/.aliasesとか書いておくんですけどね。
