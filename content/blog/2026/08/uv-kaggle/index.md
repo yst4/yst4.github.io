@@ -14,7 +14,7 @@ math = false
 categories = ["learn","how-to-use"]
 tags = ["kaggle"]
 +++
-uvを活用してる時のkaggle cliの扱いをすこしメモにおいておく。ここではシェル上で多くの場合で示されてる`$ kaggle ..` 形式ではなくて `$　uvx kaggle ...` となることに注意が必要です。
+uvを活用してる時のkaggle cliの扱いをすこしメモにおいておく。
 <!-- more -->
 ## 手順
 導入の仕方なんですが、次のようになります。
