@@ -14,7 +14,7 @@ tags = ["WSL","matplotlib","pygame"]
 mermaid = false
 math = false
 +++
-これは過去に作ったものなので再現性まで確認できてないけど、当時同じことで２台動かしたので。ここではpyside6を使ってwsl/ubuntu環境でmatplotlibを表示させる手順を残しておきます。
+これは過去に作ったものなので再現性まで確認できてないけど、当時同じことで２台動かしたので。ここではpyside6を使ってwsl/ubuntu環境でmatplotlib/pygameを表示させる手順を残しておきます。また、WSLgのスケーリング設定にも触れておきます。
 <!-- more -->
 
 wsl環境でjupyterを使わないでグラフ表示をさせる場合は可能です。昔は厳しかったけどWSLgというのが使えるようになったのでlinuxなどのX Windowシステムが表示ができるようになってるんですね。
