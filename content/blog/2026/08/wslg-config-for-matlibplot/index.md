@@ -22,7 +22,7 @@ wsl環境でjupyterを使わないでグラフ表示をさせる場合は可能�
 {% admonition(type="info", title="環境") %}
 - WSL2/Ubuntu 26.04 LTS
 
-aptを使ってインストールしてるのでdebian系を使ってるのなら似たりよったりでしょう。
+aptを使ってインストールしてるのでdebian系を使ってるのなら似たりよったりでしょう。すでにuvが使える環境になってることは前提で記事にしています。もしWSL-Ubuntuでuv環境を整えてないのでしたら、他の記事を検索してみてください。
 {% end %}
 
 ## pyside6 + matplotlib 
