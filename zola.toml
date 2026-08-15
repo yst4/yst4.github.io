@@ -48,7 +48,7 @@ light_theme = "kanagawa-lotus"
 [extra]
 # Put all your custom variables here
 invert_page_navigation = true
-isable_default_favicon = false
+isable_default_favicon = true
 # Enable KaTeX support.
 math = false
 
