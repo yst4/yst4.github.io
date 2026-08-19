@@ -9,7 +9,7 @@ description = ""
 
 [taxonomies]
 categories = ["learn"]
-tags = ["learn-kaggle","learn-ML","uv"]
+tags = ["learn-kaggle","kaggle","learn-ML","uv"]
 
 [extra]
 mermaid = false
