@@ -1,14 +1,14 @@
 +++
 title = "WSL環境で利用するmatplotlib"
 date = 2026-08-15
-# updated = 2026-08-11
+updated = 2026-08-19
 description = ""
 # if you write to post, please comment out the below draft line.
 #draft = true
 path ="/blog/how-to-use/matplotlib-and-pygame-on-wsl-ubuntu"
 [taxonomies]
 categories = ["how-to-use"]
-tags = ["WSL","matplotlib","pygame"]
+tags = ["WSL","matplotlib","pygame","uv"]
 
 [extra]
 mermaid = false

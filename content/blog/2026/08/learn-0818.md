@@ -1,7 +1,7 @@
 +++
 title = "学習ログ 26-08-18"
 date = 2026-08-18
-# updated = 2026-08-11
+updated = 2026-08-19
 description = ""
 # if you write to post, please comment out the below draft line.
 #draft = true
@@ -9,7 +9,7 @@ description = ""
 
 [taxonomies]
 categories = ["learn"]
-tags = ["kaggle"]
+tags = ["learn-kaggle","learn-ML","uv"]
 
 [extra]
 mermaid = false

@@ -1,7 +1,7 @@
 +++
 title = "uvを利用している時のkaggle apiの利用方法"
 date = 2026-08-13
-# updated = 2026-08-11
+updated = 2026-08-19
 description = ""
 # if you write to post, please comment out the below draft line.
 #draft = true
@@ -12,7 +12,7 @@ math = false
 
 [taxonomies]
 categories = ["learn","how-to-use"]
-tags = ["kaggle"]
+tags = ["kaggle","uv"]
 +++
 uvを活用してる時のkaggle cliの扱いをすこしメモにおいておく。
 <!-- more -->
