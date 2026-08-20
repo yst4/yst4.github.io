@@ -1,7 +1,7 @@
 +++
 title = "WSL環境で利用するmatplotlib"
 date = 2026-08-15
-updated = 2026-08-19
+updated = 2026-08-20
 description = ""
 # if you write to post, please comment out the below draft line.
 #draft = true
@@ -88,7 +88,8 @@ In [2]:
 ```
 plot.show()のあとウインドウが開き直線のグラフが出てきます。出ればOKです。ウインドウの右のXをクリックすれば終了です。
 
-![alt wlsg-matlibplot-pyside6-wslg.webp](./image/matplotlib-pyside6-wslg.webp)
+<img src="./image/matplotlib-pyside6-wslg.webp" alt="ALT" class="center-image">
+    
 {% admonition(type="warning", title="警告表示について") %}
 `Call to org.freedesktop....` というワーニングが出ますが、これはWSLg 特有の仕様（Desktop Portal 非搭載）によるものであり、グラフ表示および動作には問題ないため無視してよい。(geminiに聞いてみた。)
 {% end %}

@@ -14,7 +14,7 @@ taxonomies = [
 generate_sitemap = true
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
+compile_sass = true
 # The site title.
 # Will be in all page titles.
 title = "yst4 log"

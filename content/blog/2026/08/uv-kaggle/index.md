@@ -1,7 +1,7 @@
 +++
 title = "uvを利用している時のkaggle apiの利用方法"
 date = 2026-08-13
-updated = 2026-08-19
+updated = 2026-08-20
 description = ""
 # if you write to post, please comment out the below draft line.
 #draft = true
@@ -42,7 +42,7 @@ uvを活用してる時のkaggle cliの扱いをすこしメモにおいてお�
 この画像で既にapiのタブが示された状態になってます。この画面のAPI Token (Recommended)の下にあるNEW TOKEN NAMEという部分にPCの環境の名前でも入力して起きます。ここではwsl-Vinus-uvとしています。僕のwsl環境のPCの名前（Vinus)ということで作ってます。uvまで名前についてますがあってもなくてもよいです。環境次第ですね。
 そうすると
 
-![alt kaggle-api-menu](./image/kaggle-api-menu.webp)
+<img src="./image/kaggle-api-menu.webp" alt="ALT" class="center-image">
 
 が開きます。いくつかの種類が示されてるのですが、該当箇所をコピペしてターミナルでコピペしてenter(実行)させてしまえば自動的にkaggle api keyが~/.kaggle/access_tokenという名前でapi keyが登録されますので、これで環境が整いました。ここでぼかしを掛けてる _KGAT_数字_　というのがkaggle api keyになります。
 
