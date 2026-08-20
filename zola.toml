@@ -12,6 +12,7 @@ taxonomies = [
 ]
 
 generate_sitemap = true
+generate_robots_txt = true
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
