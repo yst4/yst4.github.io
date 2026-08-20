@@ -1,4 +1,15 @@
+# Web Archive (Wayback Machine)
+User-agent: ia_archiver
+Disallow: /
+
+# ウェブ魚拓 (Megalodon)
+User-agent: MegalodonProvider
+Disallow: /
+
+# 一般クローラー（Google, Bing等）
 User-agent: *
 Allow: /
+Disallow: /misc/
+Disallow: /about/
 
 Sitemap: {{ get_url(path="sitemap.xml") }}
