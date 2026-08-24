@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: MegalodonProvider
+Disallow: /
+
+User-agent: *
+Allow: /
 Sitemap: {{ get_url(path="sitemap.xml") }}
