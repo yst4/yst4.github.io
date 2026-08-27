@@ -2,7 +2,7 @@
 title = "学習ログ 26-08-24 AAAMLPの写経のためのレポジトリとリファクタリング"
 date = 2026-08-24
 # updated = 2026-08-24
-description = "AAAMLPの写経"
+description = ""
 # if you write to post, please comment out the below draft line.
 # draft = true
 path = "/blog/2026/08/learn-0824"
