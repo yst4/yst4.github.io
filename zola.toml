@@ -43,8 +43,8 @@ render_emoji = true
 #theme = "catppuccin-frappe"
 #light_theme = "catppuccin-latte"
 #dark_theme = "catppuccin-macchiato"
-dark_theme = "kanagawa-wave"
-light_theme = "kanagawa-lotus"
+dark_theme = "rose-pine"
+light_theme = "rose-pine-dawn"
 
 [extra]
 # Put all your custom variables here

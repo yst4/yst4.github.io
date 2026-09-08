@@ -28,7 +28,7 @@ math = false
 
 あとうまく`itertools`使ってるのに無駄にリストにして`for`文に持ってきたり。イテレータについて言うと、わざわざリストに直すのはメモリも速度でもデメリットになるだけしかないのでね。チョットそういう洗練されてないところはあるんですが、巷の記事でイテレータをうまく扱ってるものは希少なんでこういったことが残りやすいんでしょうね。
 
-``` python,linenos,
+``` python,linenos,hi_lines=11 13,name=feature_engineering.py
 def feature_engineering(df, cat_cols):
     """
     This function is used for feature engineering
