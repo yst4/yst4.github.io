@@ -77,7 +77,7 @@ df["foo"] = ...
 ## :book: ISLR2 とR言語
 統計的なこともすこし頭の中整理しないとなと思ってね。定評がある教科書 `An Introduction to Statistical Learning` が教育敵配慮？で無料公開されてるので使わない手がないなというので、活用してます。当初は`ISLP`を読んでたけど、`Python`写経をやってると時代の変化があってね。ならばすこし枯れてると行っていいRのほうがええやん。となりました。
 
-- :book: https://www.statlearning.com/
+- :book: [An Introduction to Statistical Learning (公式)](https://www.statlearning.com/)
 
 ### R言語
 R言語といっても大昔にすこし触った経験しかなくて、その頃から`scheme`の親戚（S式ではないけど思想的にlispなんですよ！）とオブジェクト指向は`C++`/`Java`のようなクソ仕様（嫌いなんで。）じゃなくて`Common Lisp`のオブジェクト指向に当たる`CLOS`のような柔軟なOOPという感覚だったんですよね。
