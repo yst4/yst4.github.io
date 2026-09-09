@@ -41,10 +41,10 @@ render_emoji = true
 
 [markdown.highlighting]
 #theme = "catppuccin-frappe"
-#light_theme = "catppuccin-latte"
-#dark_theme = "catppuccin-macchiato"
-dark_theme = "rose-pine"
-light_theme = "rose-pine-dawn"
+light_theme = "catppuccin-latte"
+dark_theme = "catppuccin-macchiato"
+#dark_theme = "rose-pine"
+#light_theme = "rose-pine-dawn"
 
 [extra]
 # Put all your custom variables here
