@@ -191,8 +191,7 @@ r$>  data <- read_csv(here::here("input", "foo.csv")
 
 例えば input/foo.csv を読み込む場合の実行例です。
 ```
-r$> # プロジェクトルートからの相対パスで一発指定
-    data <- read_csv(here::here("input", "foo.csv"))
+r$> data <- read_csv(here::here("input", "foo.csv"))
                                                                                                                         Rows: 2 Columns: 3
 ── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────
 Delimiter: ","
