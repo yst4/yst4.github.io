@@ -5,7 +5,7 @@ date = 2026-09-10
 description = ""
 # if you write to post, please comment out the below draft line.
 # draft = true
-# path = ""
+path = "/blog/how-to-use/R-project-management-on-cli"
 
 [taxonomies]
 categories = ["how-to-use"]
