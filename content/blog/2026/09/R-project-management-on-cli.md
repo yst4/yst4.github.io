@@ -9,7 +9,7 @@ description = ""
 
 [taxonomies]
 categories = ["how-to-use"]
-tags = ["R"]
+tags = ["R", "Bash", "Neovim", "Zed"]
 
 [extra]
 mermaid = false
