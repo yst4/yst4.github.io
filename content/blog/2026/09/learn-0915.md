@@ -26,7 +26,7 @@ AAAMLP (和書名は :book: `kaggleGrandmasterに学ぶ機械学習実践アプ�
 
 今回AAAMLPを写経するうえで、ライブラリの古い仕様の問題を解決させるのに助かってますね。5章の最後のtensorflowを使ったものに関しては、修正箇所が多かったんで完全丸投げしてしまいましたが、多すぎたら心が折れますわ。😁
 
-R言語はプログラミングしようと思ったら、遅延評価が基本なんでreset_indexとは違った問題はあるんですけどね。評価をその場所で行うforceを使うか使わないかに気を配らないといけないので。例えば、 [:book: Advanced R chapter 10 Function Factories](https://adv-r.hadley.nz/function-factories.html)
+R言語はプログラミングしようと思ったら、遅延評価が基本なんでreset_indexとは違った問題はあるんですけどね。評価をその場所で行うforceを使うか使わないかに気を配らないといけないので。例えば、 [:book: Advanced R chapter 10 Function Factories](https://adv-r.hadley.nz/function-factories.html) に簡単な例が示されてます。この例では関数を返す関数を使って、状態を保持するということをやるのですが、その状態の評価のタイミングがずれたら値がバグるって問題の指摘なんです。こういう作り方はいつ使うの？と言われると、状態を保持する関数（クロージャ）をループ等で動的に大量生成するときやメモ化といったキャッシュ処理技術では使いますね。
 
 ```python
 def generate_features(df):
