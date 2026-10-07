@@ -81,7 +81,6 @@ wslを終わらせないといけないんですね。あと確実にwslcのプ�
 こうして確実に終わらせました。それでwslcをお試ししてみます。
 ```
 > wslc run --rm alpine hostname
-```
 wsl: session.storagePath で構成されたセッション ストレージを 'D:\VHDX\wslc\sessions\wslc-cli-****' に作成しています。後でこの設定を変更または削除すると、ここに格納されているデータは既定のセッションでは使用されなくなるので、削除して領域を解放することができます。
 
 イメージ 'alpine' が見つかりません。プルしています 
@@ -91,9 +90,9 @@ wsl: session.storagePath で構成されたセッション ストレージを 'D
 
 これでOKです。
 ## おまけ：動作確認例（Jupyter DataScience Notebook）
-ポートバインド（-p）とホストディレクトリのマウント（-v）を指定してjupyterを起動。詳しくは[:link: jupyter/datascience-notebook (docker hub)](https://hub.docker.com/r/jupyter/datascience-notebook)
+jupyterを起動。詳しくは[:link: jupyter/datascience-notebook (docker hub)](https://hub.docker.com/r/jupyter/datascience-notebook)
 ```
-
+# ポートバインド（-p）とホストディレクトリのマウント（-v）を指定
 > wslc run --rm -p 8888:8888 -v ~/project:/home/jovyan/work jupyter/datascience-notebook
 ```
 

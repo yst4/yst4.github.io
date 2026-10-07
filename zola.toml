@@ -36,6 +36,9 @@ feed_filenames = ["atom.xml"]
 # for "default_language".
 build_search_index = true
 
+# ignore qmd files.
+ignored_content = ["*.qmd", "**/*.qmd"]
+
 [markdown]
 render_emoji = true
 
