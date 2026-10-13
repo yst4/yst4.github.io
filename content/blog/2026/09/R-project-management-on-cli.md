@@ -61,10 +61,11 @@ drwxr-xr-x 2 yasuto yasuto 4096 Sep  9 22:40 src
 前置きが長くなりましたが、スクリプトをお見せします。少し長いですけど、色々考えたら長くなっちゃったです。まだ修正はするかもしれません。
 
 ## `rpro` Rのプロジェクト作成
-これは僕のアイデアとGeminiの支援で作っています。だからシェルスクリプトに日本語が溢れてます。
+これは僕のアイデアとGeminiの支援で作っています。だからシェルスクリプトに日本語が溢れてます。gitleaks対応版に差し替えました。ubuntuなら`sudo apt install gitleaks`でインストールできます。
 ```
 cat << 'EOF' > ~/bin/rpro
 #!/bin/bash
+echo "Creating directory structure..."
 
 # プロジェクト名の指定（引数がない場合はカレントディレクトリを対象にする）
 PROJECT_NAME=${1:-.}
@@ -111,15 +112,30 @@ __pycache__/
 .Renviron
 IGEOF
 
-# 3. 追跡用の .gitkeep 配置と秘匿ファイルの権限設定
+# 3. 追跡用の .gitkeep 配置と秘匿ファイルの作成
 touch input/.gitkeep output/.gitkeep src/.gitkeep notebooks/.gitkeep
 touch .env && chmod 600 .env
 
-# 4. Gitの初期化（未初期化の場合のみ）
-if [ ! -d ".git" ]; then
-    git init
-    echo "Initialized empty Git repository."
+# 4. Gitリポジトリ初期化とgitleaks用フックの設定
+git init
+
+mkdir -p .githooks
+cat << 'EOF' > .githooks/pre-commit
+#!/bin/sh
+# gitleaksでステージングされた変更のみをチェック
+if command -v gitleaks >/dev/null 2>&1; then
+    gitleaks protect --staged --verbose
+    if [ $? -ne 0 ]; then
+        echo "❌ エラー: 機密情報が検知されたためコミットを中止しました。"
+        exit 1
+    fi
+else
+    echo "⚠️ 警告: gitleaks がインストールされていません。"
 fi
+EOF
+
+chmod +x .githooks/pre-commit
+git config core.hooksPath .githooks
 
 # 5. 初期Rスクリプト（main.R）の自動生成
 echo "Generating main.R template..."
@@ -134,13 +150,11 @@ cat << 'MAINEOF' > main.R
 # 1. ライブラリの読み込み
 if (!require("pacman")) utils::install.packages("pacman")
 pacman::p_load(
+  conflicted, # tidy~系の関数のコンフリクトの管理
   tidyverse,  # データ操作 & グラフ描画
   here,       # プロジェクトルートからの相対パス解決
-  dotenv,      # .env からの環境変数ロード
-  conflicted
+  dotenv      # .env からの環境変数ロード
 )
-## コンフリクト対策 とくに stat::filterとdplyr::filterの問題は起こりやすい。
-conflict_prefer("filter", "dplyr")
 
 # 2. 環境変数のロード
 if (file.exists(".env")) {
@@ -169,7 +183,6 @@ if (interactive() && file.exists("main.R")) {
 RPROFEOF
 
 echo "✨ R Project structure successfully initialized!"
-EOF
 ```
 となってて、僕は`~/bin/rpro`という名前で保存をして実行可能にしてあります。
 ```
